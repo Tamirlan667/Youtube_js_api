@@ -1,0 +1,30 @@
+#videos-container {
+  margin-top: 66px;
+  position: absolute;
+  left: 15%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px 20px 20px 20px;
+}
+.fa {
+  font-size: 18px;
+  color: black;
+}
+.thumbnail {
+  width: 100%;
+}
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  overflow-x: hidden;
+  line-height: 20px;
+}
+.card {
+  cursor: pointer;
+}
+.card img {
+  border-radius: 20px;
+}

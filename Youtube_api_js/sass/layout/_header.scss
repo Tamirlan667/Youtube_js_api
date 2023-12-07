@@ -1,0 +1,71 @@
+.header {
+  height: 6rem;
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 10;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__logo-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    height: 5rem;
+  }
+
+  &__user {
+    height: 3.5rem;
+    border-radius: 50%;
+  }
+
+  &__menu {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 0 1.5rem 0 0.5rem;
+    transition: all 0.1s ease-in;
+    border: 1px solid $color-white;
+
+    &:active {
+      background-color: $color-white-dark;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    @include respond(smallPhone) {
+      margin: 0 1rem 0 1.5rem;
+    }
+  }
+
+  &__search-box {
+    display: flex;
+    justify-content: center;
+    width: 65rem;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__user-box {
+    display: flex;
+  }
+
+  &__country {
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    font-size: 1rem;
+    color: $color-grey-dark-2;
+  }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Mini App III (05-07-2022) - Sanajit Jana (fw19_0513)</title>
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="shortcut icon" href="img/youtube-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="flex-div">
+      <div class="nav-left flex-div">
+        <img src="./images/menu.png" class="menu-icon" alt="" srcset="" />
+        <img src="./images/logo.png" class="logo" alt="" srcset="" />
+      </div>
+      <div class="nav-middle flex-div">
+        <div class="search-box flex-div">
+          <input type="text" placeholder="Search.." />
+          <img src="./images/search.png" alt="" srcset="" />
+        </div>
+        <img
+          src="./images/voice-search.png"
+          class="mic-icon"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="nav-right flex-div">
+        <img src="./images/upload.png" alt="" srcset="" />
+        <img src="./images/more.png" alt="" srcset="" />
+        <img src="./images/notification.png" alt="" srcset="" />
+        <a href="login.html">
+          <img src="images/login.jpeg" class="user-icon" alt="" srcset="" />
+        </a>
+      </div>
+    </nav>
+    <div class="container play-container">
+      <div class="row">
+        <div class="play-video">
+          <iframe
+            allow="fullscreen;"
+            frameborder="0"
+            gesture="media"
+            allow="encrypted-media"
+            width="420"
+            height="555"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+          <h3>
+            『チェンソーマン』ノンクレジットオープニング / CHAINSAW MAN
+            Opening│米津玄師 「KICK BACK」
+          </h3>
+          <div class="play-video-info">
+            <div class="owner">
+              <!-- <img src="" alt="" />
+              <div>
+                <p>MAPPA CHANNEL</p>
+                <span>19.4K subscribers</span>
+              </div>
+              <button type="button">Subscribe</button> -->
+            </div>
+            <div class="click">
+              <div class="like">
+                <button id="likeButton">
+                  <img src="images/like.png" alt="" />
+                  <span>5.3M</span>
+                </button>
+              </div>
+              <div class="space"></div>
+              <div class="dislike">
+                <button>
+                  <img src="images/dislike.png" alt="" />
+                </button>
+              </div>
+              <div class="share">
+                <button>
+                  <a href="http://"><img src="./images/share.png" />SHARE</a>
+                </button>
+              </div>
+              <div class="save">
+                <button class="save">
+                  <a href="http://"><img src="./images/save.png" />SAVE</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="vid-des">
+            <p>92,000,606 Views &bull; Oct 11, 2022</p>
+            <p>
+              オープニング・テーマ 米津玄師「KICK BACK」 Kenshi Yonezu – KICK
+              BACK 作詞・作曲米津玄師 編曲米津玄師常田大希 (King Gnu /
+              millennium parade) Contains a sample of "そうだ!We're
+              ALIVE"作詞・作曲つんく ©2002 by UP FRONT MUSIC INC. / TV TOKYO
+              Music, Inc. (Sony Music Labels Inc.)
+            </p>
+            <p>(Sony Music Labels Inc.)</p>
+            <hr />
+            <div class="cmnt">
+              <h4>48,060 Commnets</h4>
+              <img src="./images/menu.png" alt="" srcset="" />
+              <span>SORT BY</span>
+            </div>
+
+            <div class="add-cmnt">
+              <img src="images/login.jpeg" alt="" srcset="" />
+              <input type="text" placeholder="Add a Public Comment" />
+            </div>
+
+            <div class="old-cmnt">
+              <img src="images/chaw_comment.jpeg" alt="" srcset="" />
+              <div>
+                <h3>@iRaphahell <span>9 Month ago</span></h3>
+                <p>
+                  Season 1 was pretty good, looking forward to the next one,
+                  it's gonna be wild!
+                </p>
+
+                <div class="cmnt-react">
+                  <img src="./images/like.png" alt="" srcset="" />
+                  <span>24K</span>
+                  <img src="./images/dislike.png" alt="" srcset="" />
+                  <span></span>
+                  <span>REPLY</span>
+                  <!-- <a href="http://">ALL Replies</a> -->
+                  <div>&bull; View 398 Replies</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="old-cmnt">
+              <img src="images/chaw_com2.jpeg" alt="" srcset="" />
+              <div>
+                <h3>@qsilex <span>1 day ago</span></h3>
+                <p>I cannot express how good this opening is!</p>
+
+                <div class="cmnt-react">
+                  <img src="./images/like.png" alt="" srcset="" />
+                  <span>48</span>
+                  <img src="./images/dislike.png" alt="" srcset="" />
+                  <span></span>
+                  <span>REPLY</span>
+                  <!-- <a href="http://">ALL Replies</a> -->
+                  <div>&bull; View 1 Replies</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="old-cmnt">
+              <img src="images/chaw_com3.jpeg" alt="" srcset="" />
+              <div>
+                <h3>@thecatkingofcatso3095 <span>3 Month ago</span></h3>
+                <p>
+                  Even if you don’t like anime openings, I’m pretty sure nobody
+                  would skip this, the animation is just so eye catching. Few
+                  openings are this captivating, most are boring asf.
+                </p>
+
+                <div class="cmnt-react">
+                  <img src="./images/like.png" alt="" srcset="" />
+                  <span>1.1K</span>
+                  <img src="./images/dislike.png" alt="" srcset="" />
+                  <span></span>
+                  <span>REPLY</span>
+                  <!-- <a href="http://">ALL Replies</a> -->
+                  <div>&bull; View 26 Replies</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="hide-hr" />
+        </div>
+        <div class="right-sidebar">
+          <!-- <div class="side-video-list">
+            <a href="" class="small-thumbnail">
+              <img src="images/magic1.webp" alt="" srcset=""
+            /></a>
+            <div class="vid-info">
+              <a href="">TVアニメ『呪術廻戦』第2期「懐玉・玉折ットOPムー...</a>
+              <p>TOHO animation チャンネル</p>
+              <p>32.2M Views</p>
+            </div>
+          </div>
+
+          <div class="side-video-list">
+            <a href="" class="small-thumbnail">
+              <img src="images/magic2.webp" alt="" srcset=""
+            /></a>
+            <div class="vid-info">
+              <a href=""
+                >無職転生2期OP／「無職転生Ⅱ
+                ～異世界行ったら本気だす～」ノンクレジットオープニング／「spiral」</a
+              >
+              <p>LONGMAN</p>
+              <p>1.8M Views</p>
+            </div>
+          </div>
+
+          <div class="side-video-list">
+            <a href="" class="small-thumbnail">
+              <img src="images/magic3.webp" alt="" srcset=""
+            /></a>
+            <div class="vid-info">
+              <a href="">NAPOLEON - Official Trailer (HD)</a>
+              <p>Sony Pictures Entertainment</p>
+              <p>40.1M Views</p>
+            </div>
+          </div>
+
+          <div class="side-video-list">
+            <a href="video-12.html" class="small-thumbnail">
+              <img src="images/magic5.webp" alt="" srcset=""
+            /></a>
+            <div class="vid-info">
+              <a href="video-12.html"
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias, nostrum?</a
+              >
+              <p>Avalin Vines</p>
+              <p>1.1M Views</p>
+            </div>
+          </div>
+
+          <div class="side-video-list">
+            <a href="" class="small-thumbnail">
+              <img src="./images/thumbnail13.png" alt="" srcset=""
+            /></a>
+            <div class="vid-info">
+              <a href=""
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias, nostrum?</a
+              >
+              <p>Avalin Vines</p>
+              <p>1.1M Views</p>
+            </div>
+          </div>
+
+          <div class="side-video-list">
+            <a href="" class="small-thumbnail">
+              <img src="./images/thumbnail14.png" alt="" srcset=""
+            /></a>
+            <div class="vid-info">
+              <a href=""
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias, nostrum?</a
+              >
+              <p>Avalin Vines</p>
+              <p>1.1M Views</p>
+            </div>
+          </div>
+
+          <div class="side-video-list">
+            <a href="" class="small-thumbnail">
+              <img src="./images/thumbnail15.png" alt="" srcset=""
+            /></a>
+            <div class="vid-info">
+              <a href=""
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias, nostrum?</a
+              >
+              <p>Avalin Vines</p>
+              <p>1.1M Views</p>
+            </div>
+          </div>
+
+          <div class="side-video-list">
+            <a href="" class="small-thumbnail">
+              <img src="./images/thumbnail16.png" alt="" srcset=""
+            /></a>
+            <div class="vid-info">
+              <a href=""
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias, nostrum?</a
+              >
+              <p>Avalin Vines</p>
+              <p>1.1M Views</p>
+            </div>
+          </div>
+
+          <div class="side-video-list">
+            <a href="" class="small-thumbnail">
+              <img src="./images/thumbnail17.png" alt="" srcset=""
+            /></a>
+            <div class="vid-info">
+              <a href=""
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias, nostrum?</a
+              >
+              <p>Avalin Vines</p>
+              <p>1.1M Views</p>
+            </div>
+          </div>
+
+          <div class="side-video-list">
+            <a href="" class="small-thumbnail">
+              <img src="./images/thumbnail18.png" alt="" srcset=""
+            /></a>
+            <div class="vid-info">
+              <a href=""
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias, nostrum?</a
+              >
+              <p>Avalin Vines</p>
+              <p>1.1M Views</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="video.js"></script>
+  <script src="right_video.js"></script>
+</html>
