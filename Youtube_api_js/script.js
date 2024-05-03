@@ -22,7 +22,7 @@ async function getVideo() {
         key: api_key,
         part: "snippet, statistics, contentDetails",
         chart: "mostPopular",
-        maxResults: 1,
+        maxResults: 10,
         regionCode: "US",
       })
   );
